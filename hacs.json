@@ -1,0 +1,7 @@
+{
+  "name": "Yandex.Music Playlist Icons",
+  "filename": "ya-music-playlist.js",
+  "render_readme": true,
+  "country": ["RU"],
+  "homeassistant": "0.110.0"
+}
