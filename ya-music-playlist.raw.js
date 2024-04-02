@@ -1,7 +1,10 @@
 const PLAYLIST_SYMBOLS_MAP = require('./ya-music-playlist.min.json')
 
 async function getIcon(name) {
-  return { path: PLAYLIST_SYMBOLS_MAP[name.replace(/_/g,'-')] };
+  return {
+    path: PLAYLIST_SYMBOLS_MAP[name.replace(/_/g,'-')],
+    viewBox: "0 0 132 132"
+  };
 }
 
 async function getIconList() {

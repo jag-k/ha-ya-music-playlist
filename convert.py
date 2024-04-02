@@ -19,7 +19,7 @@ for symbol_file in files:
     try:
         symbol_path_d = RE_PATH.findall(symbol_file_path.read_text())
     except UnicodeDecodeError as err:
-        print(symbol_file_path)
+        print(f'\n\n{symbol_file_path}')
         raise err
     try:
         ALL_SYMBOLS[symbol_name] = str(symbol_path_d[0])
